@@ -15,7 +15,7 @@ for (int n = 0; n<234; ++n)
   fin >> a >> b;
   c = a + b;
   // std::cout << a << "," << b << std::endl;
-  std::cout << "Summe:" << c << std::endl;
+  std::cout << c << std::endl;
 
   fout << c << std::endl;
 }
