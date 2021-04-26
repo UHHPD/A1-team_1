@@ -4,7 +4,7 @@
 
 int main()
 {
-  int a;
+  double a;
   double summe;
   double durchschnitt;
   double Varianzarg;
@@ -12,7 +12,7 @@ int main()
   double Varianz;
   double Standardabweichung;
   double msum;
-  double nsum;
+  double vsum;
 
   std::ifstream fin("datensumme.txt");
   std::ofstream fout("mittelwerte.txt");
@@ -56,9 +56,15 @@ int main()
   for (int n=0; n<26; n++)
   {
     jin >> a;
-    nsum += a;
+    vsum += a;
   }
-  double VarianzMit = nsum/26;
+  double VarianzMit = vsum/26;
   std::cout << VarianzMit << std::endl;
 
+  fin.close();
+  fout.close();
+  gin.close();
+  gout.close();
+  jin.close();
+  hin.close();
 }
