@@ -50,7 +50,7 @@ int main()
     msum += a;
   }
   double Mittelwert = msum / 26;
-  std::cout << Mittelwert << std::endl;
+  //std::cout << Mittelwert << std::endl;
 
   std::ifstream jin("varianzen.txt");
   for (int n=0; n<26; n++)
@@ -59,6 +59,5 @@ int main()
     nsum += a;
   }
   double VarianzMit = nsum/26;
-  std::cout << VarianzMit << std::endl;
-
+  //std::cout << VarianzMit << std::endl;
 }
